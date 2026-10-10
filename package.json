@@ -1,0 +1,21 @@
+{
+  "name": "haystack-needle-game",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --configLoader runner --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --host 0.0.0.0",
+    "standalone": "node scripts/build-standalone.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  }
+}
